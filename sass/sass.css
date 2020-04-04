@@ -1,10 +1,27 @@
 * {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+a:hover {
+  cursor: pointer;
 }
 
 body html {
   background-color: #222222;
+}
+
+#responsiveTitle {
+  display: none;
+  margin: 0 auto;
+  font-size: 38px;
+  text-align: center;
+  margin-top: 40px;
 }
 
 nav {
@@ -20,6 +37,7 @@ nav {
           justify-content: space-between;
   width: 100%;
   padding: 30px;
+  border-bottom: 1px solid rgba(35, 34, 34, 0.4);
 }
 
 nav #LeftWrapper {
@@ -39,7 +57,7 @@ nav #LeftWrapper span {
 
 nav #LeftWrapper #inputWrapper {
   border: 1px solid rgba(35, 34, 34, 0.4);
-  height: 30px;
+  height: 40px;
   width: 400px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -73,7 +91,162 @@ nav #LeftWrapper #inputWrapper input {
 nav #LeftWrapper #inputWrapper button {
   border: none;
   background-color: #3fca89;
-  height: 30px;
+  height: 40px;
   width: 30%;
+  color: white;
+  font-size: 1em;
+}
+
+nav #RightWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  padding-right: 5%;
+}
+
+nav #RightWrapper * {
+  padding: 5px;
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
+nav #RightWrapper *:hover {
+  opacity: .8;
+}
+
+nav #RightWrapper #language {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav #RightWrapper #language:hover {
+  opacity: 1;
+}
+
+nav #RightWrapper #language span {
+  font-size: 1em;
+}
+
+nav #RightWrapper #language span:hover {
+  opacity: 1;
+}
+
+nav #RightWrapper #language i {
+  font-size: 18px;
+  font-weight: 700;
+  color: pink;
+}
+
+nav #RightWrapper #language i:hover {
+  opacity: 1;
+}
+
+nav #RightWrapper #fiverrPro {
+  color: #67dbcb;
+}
+
+nav #RightWrapper #signIn {
+  border: none;
+  background-color: transparent;
+}
+
+nav #RightWrapper #join {
+  background-color: transparent;
+  border: 1px solid rgba(35, 34, 34, 0.7);
+  border-radius: 5px;
+  width: 100px;
+  -webkit-transition: ease 0.4s;
+  transition: ease 0.4s;
+  margin-left: 15px;
+}
+
+nav #RightWrapper #join:hover {
+  border: 1px solid #1dbf73;
+  background-color: #1dbf73;
+  color: white;
+  opacity: 1;
+}
+
+@media only screen and (max-width: 1100px) {
+  nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 50px;
+    width: 100%;
+    padding: 0;
+    padding-bottom: 30px;
+  }
+  nav #LeftWrapper span {
+    margin-right: 50px;
+  }
+  nav #RightWrapper {
+    padding-top: 40px;
+  }
+}
+
+@media only screen and (max-width: 684px) {
+  #responsiveTitle {
+    display: block;
+  }
+  #LeftWrapper span {
+    display: none;
+  }
+  #RightWrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  #LeftWrapper {
+    width: 90%;
+  }
+  #RightWrapper button {
+    margin-top: 25px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  #LeftWrapper #inputWrapper button {
+    width: 15%;
+  }
+  #RightWrapper a, #RightWrapper span, #RightWrapper i {
+    display: none;
+  }
+  #RightWrapper button {
+    margin-bottom: 30px;
+  }
 }
 /*# sourceMappingURL=sass.css.map */
