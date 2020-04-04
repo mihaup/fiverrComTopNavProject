@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body html {
+  background-color: #222222;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  padding: 30px;
+}
+
+nav #LeftWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+nav #LeftWrapper span {
+  font-size: 28px;
+  padding-right: 20px;
+}
+
+nav #LeftWrapper #inputWrapper {
+  border: 1px solid rgba(35, 34, 34, 0.4);
+  height: 30px;
+  width: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5px;
+}
+
+nav #LeftWrapper #inputWrapper i {
+  font-size: 15px;
+  color: rgba(35, 34, 34, 0.7);
+  margin-left: 3px;
+}
+
+nav #LeftWrapper #inputWrapper input {
+  border: none;
+  width: 60%;
+  outline: none;
+  font-size: 15px;
+}
+
+nav #LeftWrapper #inputWrapper button {
+  border: none;
+  background-color: #3fca89;
+  height: 30px;
+  width: 30%;
+}
+/*# sourceMappingURL=sass.css.map */
