@@ -14,11 +14,11 @@
 
 
 
-<body>
+<body >
 
     <h3 id="responsiveTitle"><b>Fiverr</b></h3>
 
-   <nav>
+   <nav onmouseout="myFunc()">
 
 
     <div id="LeftWrapper">
@@ -48,11 +48,11 @@
 
    </nav>
 
-   <div id="navList">
+   <div id="navList" >
 
     <ul>
 
-        <li><a id="graphic-and-design-go">Graphics & Design</a></li>
+        <li><a id="graphic-and-design-go" onmouseover="myFunction()" onclick="myFun()">Graphics & Design</a></li>
 
     </ul>
 
@@ -126,7 +126,7 @@
 
    </div>
 
-   <div id ="graphic-list-wrapper">
+   <div class="invisible" id="graphic-list-wrapper" >
 
    <ul id="logo-and-brand-identity">
 
@@ -256,3 +256,30 @@
 
 
 </html>
+
+
+
+
+
+<script>
+    
+
+function myFunction() {
+    var element = document.getElementById("graphic-list-wrapper");
+
+    element.classList.add("visible");
+ }
+
+ function myFun() {
+    var element = document.getElementById("graphic-list-wrapper");
+
+    element.classList.toggle("visible"); }
+
+    function myFunc() {
+    var element = document.getElementById("graphic-list-wrapper");
+
+    element.classList.remove("visible");
+
+
+ }
+ </script>

@@ -208,10 +208,6 @@ nav #RightWrapper #join:hover {
   border-bottom: 1px solid rgba(35, 34, 34, 0.4);
 }
 
-#navList #graphic-and-design-go:hover + #graphic-list-wrapper {
-  display: block;
-}
-
 #graphic-list-wrapper {
   width: 80%;
   padding: 30px;
@@ -227,8 +223,6 @@ nav #RightWrapper #join:hover {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  border: 1px solid black;
-  display: none;
 }
 
 #graphic-list-wrapper ul {
@@ -257,6 +251,15 @@ nav #RightWrapper #join:hover {
   padding-right: 3px;
   padding-left: 3px;
   color: pink;
+}
+
+/*****************************Universal classes*************************************/
+.invisible {
+  opacity: 0;
+}
+
+.visible {
+  opacity: 1;
 }
 
 /***********************Media Queries******************************************/
