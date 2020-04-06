@@ -208,7 +208,7 @@ nav #RightWrapper #join:hover {
   border-bottom: 1px solid rgba(35, 34, 34, 0.4);
 }
 
-#graphic-list-wrapper {
+.list-wrapper {
   width: 80%;
   padding: 30px;
   display: -webkit-box;
@@ -225,25 +225,25 @@ nav #RightWrapper #join:hover {
       flex-wrap: wrap;
 }
 
-#graphic-list-wrapper ul {
+.list-wrapper ul {
   width: 25%;
   margin-top: 5%;
 }
 
-#graphic-list-wrapper ul li {
+.list-wrapper ul li {
   padding: 5px;
 }
 
-#graphic-list-wrapper ul li:hover {
+.list-wrapper ul li:hover {
   cursor: pointer;
   opacity: .8;
 }
 
-#graphic-list-wrapper ul li a {
+.list-wrapper ul li a {
   line-height: 40px;
 }
 
-#graphic-list-wrapper ul li span {
+.list-wrapper ul li span {
   font-size: 13px;
   border: 2px solid pink;
   border-radius: 20px;
@@ -253,13 +253,25 @@ nav #RightWrapper #join:hover {
   color: pink;
 }
 
+#social-list-wrapper {
+  width: 30%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-left: 10%;
+}
+
+#social-list-wrapper ul {
+  width: 50%;
+}
+
 /*****************************Universal classes*************************************/
 .invisible {
-  opacity: 0;
+  height: 0;
+  overflow: hidden;
 }
 
 .visible {
-  opacity: 1;
+  height: auto;
 }
 
 /***********************Media Queries******************************************/

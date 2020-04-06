@@ -52,13 +52,13 @@
 
     <ul>
 
-        <li><a id="graphic-and-design-go" onmouseover="myFunction()" onclick="myFun()">Graphics & Design</a></li>
+        <li class="showContent"><a id="graphic-and-design-go" onclick onmouseover="myFunction()" >Graphics & Design</a></li>
 
     </ul>
 
     <ul>
 
-        <li><a>Digital Marketing</a></li>
+        <li class="showContent"><a onclick onmouseover="SocialChanged()" >Digital Marketing</a></li>
         
 
 
@@ -126,7 +126,7 @@
 
    </div>
 
-   <div class="invisible" id="graphic-list-wrapper" >
+   <div class="invisible list-wrapper" id="list-wrapper">
 
    <ul id="logo-and-brand-identity">
 
@@ -252,6 +252,9 @@
 </div>
 
 
+
+
+
 </body>
 
 
@@ -265,21 +268,108 @@
     
 
 function myFunction() {
-    var element = document.getElementById("graphic-list-wrapper");
+    var element = document.getElementById("list-wrapper");
 
-    element.classList.add("visible");
- }
-
- function myFun() {
-    var element = document.getElementById("graphic-list-wrapper");
-
+  
     element.classList.toggle("visible"); }
+ 
+
+
+
+    
 
     function myFunc() {
-    var element = document.getElementById("graphic-list-wrapper");
+    var element = document.getElementById("list-wrapper");
 
     element.classList.remove("visible");
 
 
  }
  </script>
+
+
+
+
+<script>
+
+
+function SocialChanged(){
+
+    
+
+document.getElementById("list-wrapper").innerHTML = "Paragraph changed!";
+let listWrapper = document.getElementById("list-wrapper");
+
+listWrapper.addEventListener("mouseout", myFunction);
+
+function myFunction() {
+
+    
+
+    alert ("Hello World!");
+    
+
+}
+
+
+
+
+}
+
+ /*
+ 
+ <div class="invisible list-wrapper" id="social-list-wrapper">
+
+    <ul id="social-media-marketing">
+ 
+     <li><a><b>Social Media Marketing</b></a></li>
+ 
+     <li>SEO</li>
+     
+     <li>Marketing Strategy</li>
+     <li>Public Relations <span>NEW</span></li>
+     <li>Marketing Strategy</li>
+     <li>Video Marketing</li>
+     <li>Crowdfunding</li>
+     <li>Email Marketing</li>
+     <li>SEM</li>
+     <li>Surveys</li>
+     <li>Web Analytics</li>
+
+
+ 
+     </ul>
+ 
+     <ul id="social-media-advertising">
+ 
+         <li><a><b>Social Media Advertising</b></a> <span>NEW</span></li>
+     
+         <li>Local SEO</li>
+         
+         <li>Influencer Marketing</li>
+         <li>E-Comerce Marketing</li>
+         <li>Mobile Marketing & Advertising</li>
+         
+         <li>Podcast Marketing <span>NEW</span></li>
+         <li>Book & eBook Marketing <span>NEW</span></li>
+         <li>Domain Research</li>
+         <li>Music Promotion</li>
+         <li>Web Traffic</li>
+
+         
+     
+         </ul>
+ 
+ 
+        
+ 
+     
+ 
+ 
+ </div>
+
+ */
+
+</script>
+
+

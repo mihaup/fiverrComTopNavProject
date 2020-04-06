@@ -230,7 +230,7 @@ nav
     
 }
 
-#graphic-list-wrapper
+.list-wrapper
 {
     width: 80%;
     padding: 30px;
@@ -238,6 +238,7 @@ nav
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+  
     
     
     
@@ -291,17 +292,31 @@ nav
 
 }
 
+
+#social-list-wrapper
+{
+    width: 30%;
+    justify-content: space-around;
+    margin-left: 10%;
+
+    ul 
+    {
+        width: 50%;
+    }
+}
+
 /*****************************Universal classes*************************************/
 
 .invisible
 {
     
-    opacity: 0;
+    height: 0;
+    overflow: hidden;
 }
 
 .visible
 {
-    opacity: 1;
+    height: auto;
 }
 
 
