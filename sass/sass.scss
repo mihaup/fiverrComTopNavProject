@@ -364,6 +364,7 @@ nav
             color: white;
             font-weight: bold;
             font-size: 18px;
+            
         }
 
         
@@ -609,6 +610,12 @@ nav
 
 @media only screen and (max-width: 420px)
 {
+
+    #list-wrapper
+
+    {
+        display:none;
+    }
 
 #LeftWrapper
 {

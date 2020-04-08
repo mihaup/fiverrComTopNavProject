@@ -462,6 +462,9 @@ nav #LeftWrapper button {
 }
 
 @media only screen and (max-width: 420px) {
+  #list-wrapper {
+    display: none;
+  }
   #LeftWrapper {
     width: 90%;
   }
