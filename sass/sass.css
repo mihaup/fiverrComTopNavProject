@@ -73,22 +73,23 @@ nav #LeftWrapper #inputWrapper {
       -ms-flex-align: center;
           align-items: center;
   border-radius: 5px;
+  display: none;
 }
 
-nav #LeftWrapper #inputWrapper i {
+nav #LeftWrapper i {
   font-size: 15px;
   color: rgba(35, 34, 34, 0.7);
   margin-left: 3px;
 }
 
-nav #LeftWrapper #inputWrapper input {
+nav #LeftWrapper input {
   border: none;
   width: 60%;
   outline: none;
   font-size: 15px;
 }
 
-nav #LeftWrapper #inputWrapper button {
+nav #LeftWrapper button {
   border: none;
   background-color: #3fca89;
   height: 40px;
@@ -97,7 +98,7 @@ nav #LeftWrapper #inputWrapper button {
   font-size: 1em;
 }
 
-nav #RightWrapper {
+#RightWrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -115,17 +116,17 @@ nav #RightWrapper {
   padding-right: 5%;
 }
 
-nav #RightWrapper * {
+#RightWrapper * {
   padding: 5px;
   font-size: 1.2em;
   font-weight: 500;
 }
 
-nav #RightWrapper *:hover {
+#RightWrapper *:hover {
   opacity: .8;
 }
 
-nav #RightWrapper #language {
+#RightWrapper #language {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -141,38 +142,38 @@ nav #RightWrapper #language {
           align-items: center;
 }
 
-nav #RightWrapper #language:hover {
+#RightWrapper #language:hover {
   opacity: 1;
 }
 
-nav #RightWrapper #language span {
+#RightWrapper #language span {
   font-size: 1em;
 }
 
-nav #RightWrapper #language span:hover {
+#RightWrapper #language span:hover {
   opacity: 1;
 }
 
-nav #RightWrapper #language i {
+#RightWrapper #language i {
   font-size: 18px;
   font-weight: 700;
   color: pink;
 }
 
-nav #RightWrapper #language i:hover {
+#RightWrapper #language i:hover {
   opacity: 1;
 }
 
-nav #RightWrapper #fiverrPro {
+#RightWrapper #fiverrPro {
   color: #67dbcb;
 }
 
-nav #RightWrapper #signIn {
+#RightWrapper #signIn {
   border: none;
   background-color: transparent;
 }
 
-nav #RightWrapper #join {
+#RightWrapper #join {
   background-color: transparent;
   border: 1px solid rgba(35, 34, 34, 0.7);
   border-radius: 5px;
@@ -182,7 +183,7 @@ nav #RightWrapper #join {
   margin-left: 15px;
 }
 
-nav #RightWrapper #join:hover {
+#RightWrapper #join:hover {
   border: 1px solid #1dbf73;
   background-color: #1dbf73;
   color: white;
@@ -264,6 +265,90 @@ nav #RightWrapper #join:hover {
   width: 50%;
 }
 
+/*****************************Main Search Section Landing Page*************************************/
+#mainSearchSection {
+  margin-left: 5%;
+  padding-bottom: 2%;
+}
+
+#mainSearchSection h2 {
+  padding: 5px;
+  font-size: 2rem;
+}
+
+#mainSearchSection #inputWrapper {
+  width: 50%;
+  border: 1px solid rgba(35, 34, 34, 0.4);
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 10px;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  height: 40px;
+}
+
+#mainSearchSection #inputWrapper i {
+  padding-right: 5px;
+}
+
+#mainSearchSection #inputWrapper input {
+  border: none;
+  outline: none;
+}
+
+#mainSearchSection #inputWrapper button {
+  border: none;
+  background-color: #3fca89;
+  width: 20%;
+  height: 40px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+#mainSearchSection #mainSearchUnderTags {
+  height: auto;
+  margin-top: 4%;
+  overflow: visible;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#mainSearchSection #mainSearchUnderTags * {
+  padding: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#mainSearchSection #mainSearchUnderTags a {
+  overflow: visible;
+  border: 1px solid rgba(35, 34, 34, 0.4);
+  border-radius: 5px;
+  -webkit-transition: ease-in-out .2s;
+  transition: ease-in-out .2s;
+}
+
+#mainSearchSection #mainSearchUnderTags a:hover {
+  background-color: rgba(35, 34, 34, 0.4);
+}
+
 /*****************************Universal classes*************************************/
 .invisible {
   height: 0;
@@ -298,9 +383,26 @@ nav #RightWrapper #join:hover {
   nav #RightWrapper {
     padding-top: 40px;
   }
+  #navList {
+    display: none;
+  }
+  #mainSearchSection #inputWrapper {
+    justify-items: center;
+  }
+  #mainSearchSection #mainSearchUnderTags {
+    margin-top: 10%;
+  }
 }
 
 @media only screen and (max-width: 684px) {
+  nav #LeftWrapper #inputWrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  nav #LeftWrapper #inputWrapper button {
+    width: 20%;
+  }
   #responsiveTitle {
     display: block;
   }
@@ -312,6 +414,50 @@ nav #RightWrapper #join:hover {
         flex-wrap: wrap;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+  }
+  #mainSearchSection {
+    margin-left: 0;
+  }
+  #mainSearchSection h2 {
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  #mainSearchSection #inputWrapper {
+    display: none;
+  }
+  #mainSearchSection #mainSearchUnderTags {
+    margin-top: 10%;
+    min-height: 50px;
+    height: auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-bottom: 3%;
+    justify-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #mainSearchSection #mainSearchUnderTags a {
+    margin: 3%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 25%;
+    min-width: 150px;
+    height: 50px;
+    text-align: center;
+  }
+  #mainSearchSection #mainSearchUnderTags span {
+    display: none;
   }
 }
 
