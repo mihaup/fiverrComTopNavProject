@@ -12,8 +12,8 @@ a:hover {
   cursor: pointer;
 }
 
-body html {
-  background-color: #222222;
+article {
+  min-height: 100vh;
 }
 
 #responsiveTitle {
@@ -269,6 +269,7 @@ nav #LeftWrapper button {
 #mainSearchSection {
   margin-left: 5%;
   padding-bottom: 2%;
+  min-height: 500px;
 }
 
 #mainSearchSection h2 {
@@ -347,6 +348,116 @@ nav #LeftWrapper button {
 
 #mainSearchSection #mainSearchUnderTags a:hover {
   background-color: rgba(35, 34, 34, 0.4);
+}
+
+#logos {
+  width: 100%;
+  min-height: 50px;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top: 1px solid rgba(35, 34, 34, 0.7);
+}
+
+#logos::after {
+  position: relative;
+  content: '';
+  top: 10px;
+  width: 100%;
+  min-height: 2px;
+  margin-bottom: 10px;
+  border-bottom: solid 5px rgba(35, 34, 34, 0.4);
+}
+
+#logos span {
+  padding: 10px;
+  font-size: 1.3rem;
+}
+
+#popularProfessionalServicesWrapper {
+  padding: 20px;
+  padding-bottom: 100px;
+}
+
+#popularProfessionalServicesWrapper h1 {
+  padding: 30px;
+  padding-left: 0;
+}
+
+#popularProfessionalServicesWrapper #popularProfessionalServices {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#popularProfessionalServicesWrapper #popularProfessionalServices div {
+  width: 15%;
+  min-width: 200px;
+  min-height: 300px;
+  border: 1px solid black;
+  margin-bottom: 15px;
+  background-color: rgba(35, 34, 34, 0.7);
+  overflow-y: unset;
+}
+
+#popularProfessionalServicesWrapper #popularProfessionalServices div button {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 50%;
+  font-size: 1.3rem;
+}
+
+#popularProfessionalServicesWrapper #popularProfessionalServices div:hover {
+  cursor: pointer;
+  background-color: rgba(35, 34, 34, 0.5);
+}
+
+#popularProfessionalServicesWrapper #popularProfessionalServices div h5 {
+  padding-top: 15px;
+  padding-left: 15px;
+  color: white;
+  letter-spacing: 1px;
+}
+
+#popularProfessionalServicesWrapper #popularProfessionalServices div h3 {
+  padding-left: 15px;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+#popularProfessionalServicesWrapper #first button {
+  position: relative;
+  top: 50px;
+  left: -25px;
+  z-index: 2;
+}
+
+#popularProfessionalServicesWrapper #last button {
+  position: relative;
+  top: 50px;
+  right: 5px;
+  z-index: 2;
 }
 
 /*****************************Universal classes*************************************/
