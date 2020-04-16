@@ -396,6 +396,30 @@ nav #LeftWrapper button {
   padding-left: 0;
 }
 
+#popularProfessionalServicesWrapper button {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 50%;
+  font-size: 1.3rem;
+  z-index: 3;
+}
+
+#popularProfessionalServicesWrapper #btn-left {
+  position: relative;
+  top: 150px;
+  left: -15px;
+  z-index: 2;
+}
+
+#popularProfessionalServicesWrapper #btn-right {
+  position: relative;
+  top: 125px;
+  right: 100px;
+  z-index: 2;
+}
+
 #popularProfessionalServicesWrapper #popularProfessionalServices {
   width: 100%;
   display: -webkit-box;
@@ -415,16 +439,8 @@ nav #LeftWrapper button {
   border: 1px solid black;
   margin-bottom: 15px;
   background-color: rgba(35, 34, 34, 0.7);
-  overflow-y: unset;
-}
-
-#popularProfessionalServicesWrapper #popularProfessionalServices div button {
-  width: 50px;
-  height: 50px;
-  background-color: white;
-  border: 1px solid black;
-  border-radius: 50%;
-  font-size: 1.3rem;
+  overflow: auto;
+  border-radius: 5px;
 }
 
 #popularProfessionalServicesWrapper #popularProfessionalServices div:hover {
@@ -446,28 +462,72 @@ nav #LeftWrapper button {
   letter-spacing: 1px;
 }
 
-#popularProfessionalServicesWrapper #first button {
-  position: relative;
-  top: 50px;
-  left: -25px;
-  z-index: 2;
+#get-work-wrapper {
+  padding: 5px;
 }
 
-#popularProfessionalServicesWrapper #last button {
-  position: relative;
-  top: 50px;
-  right: 5px;
-  z-index: 2;
+#get-work-wrapper #get-work-wrapper-left {
+  width: 50%;
+}
+
+#get-work-wrapper #get-work-wrapper-left h1 {
+  padding: 5px;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  -ms-flex-line-pack: left;
+      align-content: left;
+  margin-left: -130px;
+}
+
+#get-work-wrapper #get-work-wrapper-left h3 {
+  padding-bottom: 5px;
+}
+
+#get-work-wrapper #get-work-wrapper-left div {
+  width: 100%;
+  height: auto;
+  padding: 5px;
+  margin-bottom: 30px;
+  margin-left: 55px;
 }
 
 /*****************************Universal classes*************************************/
 .invisible {
-  height: 0;
-  overflow: hidden;
+  opacity: 0;
 }
 
 .visible {
-  height: auto;
+  opacity: 1;
+}
+
+.flex-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.flex-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 /***********************Media Queries******************************************/

@@ -1,3 +1,7 @@
+
+
+
+
 *
 {
     margin: 0;
@@ -471,12 +475,59 @@ nav
         padding-left: 0;
     }
 
+
+
+    button 
+    {
+        width: 50px;
+        height: 50px;
+        background-color: white;
+        border: 1px solid black;
+        border-radius: 50%;
+        font-size: 1.3rem;
+        z-index: 3;
+        
+
+    }    
+
+    #btn-left
+    {
+        position: relative;
+        top: 150px;
+        left: -15px;
+        z-index: 2;
+    }
+
+
+
+
+
+    #btn-right
+    {
+        position: relative;
+        top: 125px;
+        right: 100px;
+        z-index: 2;
+    }
+
+
+
+
+
+
+
 #popularProfessionalServices 
 {
     width: 100%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+
+
+
+
+
+
 
 
 
@@ -489,20 +540,11 @@ nav
         border: 1px solid black;
         margin-bottom: 15px;
         background-color: rgba(35,34,34,0.7);
-        overflow-y: unset;
+        overflow: auto;
+        border-radius: 5px;
 
 
-        button 
-        {
-            width: 50px;
-            height: 50px;
-            background-color: white;
-            border: 1px solid black;
-            border-radius: 50%;
-            font-size: 1.3rem;
-            
-    
-        }
+       
 
         
       
@@ -535,46 +577,84 @@ nav
     }
 }
 
-#first 
-        {
-          
 
-            button 
-            {
-                position: relative;
-                top: 50px;
-                left: -25px;
-                z-index: 2;
-            }
+}
+
+#get-work-wrapper
+{
+    padding: 5px;
+
+    #get-work-wrapper-left
+
+    {
+
+        width: 50%;
+
+    
+
+    
+
+    
+        h1 
+        {
+            padding: 5px;
+            margin-bottom: 20px;
+            font-size: 2rem;
+            align-content: left;
+            margin-left: -130px;
+        }
+
+        h3 
+        {
+            padding-bottom: 5px;
         }
 
 
-        #last
+        div 
         {
-            button 
-            {
-                position: relative;
-                top: 50px;
-                right: 5px;
-                z-index: 2;
-            }
+            width: 100%;
+            height: auto;
+            padding: 5px;
+            margin-bottom: 30px;
+            margin-left: 55px;
         }
+
+    }
 
 
 }
+
+
 
 /*****************************Universal classes*************************************/
 
 .invisible
 {
     
-    height: 0;
-    overflow: hidden;
+    opacity:0;
 }
 
 .visible
 {
-    height: auto;
+    opacity:1;
+}
+
+.flex-row
+{
+    display: flex;
+    flex-direction: row;
+  
+    align-items: center;
+    align-content: center;
+}
+
+.flex-column
+{
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    align-content: center;
 }
 
 
