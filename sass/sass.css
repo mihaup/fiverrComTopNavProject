@@ -224,6 +224,7 @@ nav #LeftWrapper button {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  display: none;
 }
 
 .list-wrapper ul {
@@ -270,6 +271,7 @@ nav #LeftWrapper button {
   margin-left: 5%;
   padding-bottom: 2%;
   min-height: 500px;
+  margin-top: 2%;
 }
 
 #mainSearchSection h2 {
@@ -464,6 +466,7 @@ nav #LeftWrapper button {
 
 #get-work-wrapper {
   padding: 5px;
+  padding-bottom: 50px;
 }
 
 #get-work-wrapper #get-work-wrapper-left {
@@ -471,12 +474,11 @@ nav #LeftWrapper button {
 }
 
 #get-work-wrapper #get-work-wrapper-left h1 {
+  text-align: left;
   padding: 5px;
+  margin-left: 55px;
   margin-bottom: 20px;
   font-size: 2rem;
-  -ms-flex-line-pack: left;
-      align-content: left;
-  margin-left: -130px;
 }
 
 #get-work-wrapper #get-work-wrapper-left h3 {
@@ -489,6 +491,167 @@ nav #LeftWrapper button {
   padding: 5px;
   margin-bottom: 30px;
   margin-left: 55px;
+}
+
+#get-work-wrapper #get-work-wrapper-left div i {
+  color: #3fca89;
+}
+
+#get-work-wrapper #get-work-wrapper-right {
+  width: 50%;
+  padding-right: 20px;
+}
+
+#get-work-wrapper #get-work-wrapper-right iframe {
+  width: 100%;
+  height: 400px;
+}
+
+#explore-the-marketplace {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 50px;
+}
+
+#explore-the-marketplace div {
+  width: 25%;
+  height: auto;
+  min-height: 250px;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+#explore-the-marketplace div:hover {
+  cursor: pointer;
+}
+
+#explore-the-marketplace div:hover span {
+  width: 100px;
+  background-color: #3fca89;
+}
+
+#explore-the-marketplace div i {
+  font-size: 3rem;
+  color: #67dbcb;
+}
+
+#explore-the-marketplace div span {
+  width: 50px;
+  background-color: black;
+  height: 2px;
+  margin: 20px;
+  margin-top: 10px;
+  -webkit-transition: ease-in-out .2s;
+  transition: ease-in-out .2s;
+}
+
+#get-inspired-wrapper {
+  width: 100%;
+}
+
+#get-inspired-wrapper #get-inspired-header {
+  padding-left: 30px;
+}
+
+#get-inspired-wrapper #get-inspired-see-more {
+  width: 90%;
+  text-align: right;
+  color: #71bdf4;
+  cursor: pointer;
+}
+
+#get-inspired-wrapper #get-inspired {
+  margin-bottom: 50px;
+  padding: 20px;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#get-inspired-wrapper #get-inspired div.flex-column {
+  width: 20%;
+  min-width: 300px;
+  padding: 30px;
+  height: auto;
+  cursor: pointer;
+}
+
+#get-inspired-wrapper #get-inspired div.flex-column .get-inspired-picture {
+  width: 100%;
+  min-height: 250px;
+  background-color: #3fca89;
+  -webkit-box-shadow: 5px 0px 5px rgba(35, 34, 34, 0.4);
+          box-shadow: 5px 0px 5px rgba(35, 34, 34, 0.4);
+  overflow: visible;
+}
+
+#get-inspired-wrapper #get-inspired div.flex-column .get-inspired-picture button {
+  width: 48px;
+  height: 48px;
+  position: relative;
+  z-index: 5 !important;
+  border: 1px solid rgba(35, 34, 34, 0.1);
+  border-radius: 50%;
+  top: 51%;
+  background-color: #fff;
+  outline: none;
+  -webkit-transition: ease-in-out .2s;
+  transition: ease-in-out .2s;
+  font-size: 1em;
+}
+
+#get-inspired-wrapper #get-inspired div.flex-column .get-inspired-picture button:hover {
+  background-color: #3fca89;
+  color: #fff;
+  border: none;
+}
+
+#get-inspired-wrapper #get-inspired div.flex-column .get-inspired-picture #get-inspired-left {
+  left: -24px;
+}
+
+#get-inspired-wrapper #get-inspired div.flex-column .get-inspired-picture #get-inspired-right {
+  left: 91%;
+}
+
+#get-inspired-wrapper #get-inspired div.flex-column div.flex-row {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  padding-top: 15px;
+  border: 1px solid rgba(35, 34, 34, 0.1);
+  padding-bottom: 15px;
+  padding-left: 10px;
+  -webkit-box-shadow: 5px 5px 5px rgba(35, 34, 34, 0.4);
+          box-shadow: 5px 5px 5px rgba(35, 34, 34, 0.4);
+}
+
+#get-inspired-wrapper #get-inspired div.flex-column div.flex-row i {
+  text-align: center;
+  font-size: 2em;
+  border: 1px solid rgba(35, 34, 34, 0.4);
+  border-radius: 50%;
+  margin-right: 5px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#get-inspired-wrapper #get-inspired div.flex-column div.flex-row p {
+  font-style: italic;
 }
 
 /*****************************Universal classes*************************************/
@@ -508,9 +671,6 @@ nav #LeftWrapper button {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -ms-flex-line-pack: center;
       align-content: center;
 }
@@ -523,9 +683,6 @@ nav #LeftWrapper button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -ms-flex-line-pack: center;
       align-content: center;
 }

@@ -1,5 +1,7 @@
 
-
+$color-fiverr: rgb(103,219,203);
+$button-green: #3fca89;
+$blue: rgb(113,189,244);
 
 
 *
@@ -258,6 +260,7 @@ nav
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+    display:none;
   
     
     
@@ -333,6 +336,7 @@ nav
     margin-left: 5%;
     padding-bottom: 2%;
     min-height: 500px;
+    margin-top: 2%;
 
     
 
@@ -583,6 +587,7 @@ nav
 #get-work-wrapper
 {
     padding: 5px;
+    padding-bottom: 50px;
 
     #get-work-wrapper-left
 
@@ -597,11 +602,13 @@ nav
     
         h1 
         {
+            text-align: left;
             padding: 5px;
+            margin-left: 55px;
             margin-bottom: 20px;
             font-size: 2rem;
-            align-content: left;
-            margin-left: -130px;
+            
+            
         }
 
         h3 
@@ -617,13 +624,235 @@ nav
             padding: 5px;
             margin-bottom: 30px;
             margin-left: 55px;
+
+            i 
+            {
+                color: $button-green;
+            }
+
         }
+
+    }
+
+
+    #get-work-wrapper-right
+    {
+        width: 50%;
+        padding-right: 20px;
+
+        iframe 
+        {
+            width: 100%;
+            height: 400px;
+        }
+    }
+
+
+}
+
+#explore-the-marketplace 
+{
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 50px;
+
+   
+  
+
+    div 
+    {
+        width: 25%;
+        height: auto;
+        min-height: 250px;
+        justify-items: center;
+        align-items: center;
+        align-content: center;
+
+
+        &:hover 
+        {
+            cursor: pointer;
+
+            span 
+            {
+
+                width: 100px;
+                background-color: $button-green;
+
+            }
+           
+        }
+
+        i 
+        {
+            font-size: 3rem;
+            color: $color-fiverr;
+        }
+
+
+        span 
+        {
+            width: 50px;
+            background-color: black;
+            height: 2px;
+            margin: 20px;
+            margin-top: 10px;
+            transition: ease-in-out .2s;
+
+           
+
+        }
+    }
+}
+
+#get-inspired-wrapper 
+
+{
+
+    width: 100%;
+
+
+
+
+
+
+
+#get-inspired-header 
+{
+    padding-left: 30px;
+}
+
+
+#get-inspired-see-more
+{
+    width: 90%;
+    text-align: right;
+    color: $blue;
+    cursor: pointer;
+    
+    
+}
+
+#get-inspired
+{
+    margin-bottom: 50px;
+    padding: 20px;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  
+    
+
+    div.flex-column 
+    {
+        width: 20%;
+        min-width: 300px;
+        padding: 30px;
+      
+        height: auto;
+        cursor: pointer;
+        
+        
+       
+        
+
+
+        .get-inspired-picture 
+        {
+            width: 100%;
+            min-height: 250px;
+            background-color: $button-green;
+            box-shadow: 5px 0px 5px rgba(35,34,34,0.4);
+           
+            overflow: visible;
+
+
+
+            button 
+            {
+                width: 48px;
+                height: 48px;
+                position: relative;
+                z-index: 5 !important;
+                border: 1px solid rgba(35,34,34,0.1);
+                border-radius: 50%;
+                top: 51%;
+                background-color: #fff;
+                outline: none;
+                transition: ease-in-out .2s;
+                font-size: 1em;
+
+                &:hover 
+                {
+                    
+                    background-color: $button-green;
+                    color: #fff;
+                    border: none;
+                }
+            }
+
+
+            #get-inspired-left
+            {
+                
+                
+                left: -24px;
+               
+            }
+
+            #get-inspired-right
+            {
+                
+               
+                left: 91%;
+               
+            }
+            
+        }
+
+
+       div.flex-row 
+       {
+           justify-content: start;
+           padding-top: 15px;
+           border: 1px solid rgba(35,34,34,0.1);
+           padding-bottom: 15px;
+           padding-left: 10px;
+           box-shadow: 5px 5px 5px rgba(35,34,34,0.4);
+           
+
+
+        i 
+        {
+            text-align: center;
+            font-size: 2em;
+            border: 1px solid rgba(35,34,34,0.4);
+            border-radius: 50%;
+            margin-right: 5px;
+            justify-content: center;
+            align-items: center;
+           
+            
+           
+           
+        }
+
+        p 
+        {
+            font-style: italic;
+        }
+
+
+       } 
+
+
 
     }
 
 
 }
 
+}
 
 
 /*****************************Universal classes*************************************/
@@ -644,7 +873,7 @@ nav
     display: flex;
     flex-direction: row;
   
-    align-items: center;
+   
     align-content: center;
 }
 
@@ -653,7 +882,7 @@ nav
     display: flex;
     flex-direction: column;
     
-    align-items: center;
+  
     align-content: center;
 }
 
