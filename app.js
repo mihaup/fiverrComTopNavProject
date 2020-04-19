@@ -1,3 +1,4 @@
-let naglowek = document.getElementsByTagName("h1");
+let doom = document.getElementById("popularProfessionalServicesWrapper").div;
 
-naglowek.capitalize;
+
+doom.style.backgroundColor = "rgb(29,191,115)";
